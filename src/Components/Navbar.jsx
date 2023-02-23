@@ -1,9 +1,11 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { useStateValue } from "../StateProvider";
 
  const Navbar=()=>{
     const [{basket}]=useStateValue();
+    const navigate=useNavigate();
    // console.log("basket=>",basket)
     const logoPath="/amazon_logo1.png";
     const searchIcon="/searchIcon.png";
@@ -29,7 +31,7 @@ import { useStateValue } from "../StateProvider";
                 <p>Return</p>
                 <p>& Orders</p>
                 </NavBtn>
-                <BasketBtn>
+                <BasketBtn onClick={()=>navigate('/checkout')}>
                     <img src={basketIcon}alt="loading"></img>
                    <p>{basket.length}</p> 
                 </BasketBtn>
