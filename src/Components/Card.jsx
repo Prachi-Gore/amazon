@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Rating from '@mui/material/Rating';
 import { useStateValue } from "../StateProvider";
 
-export default function Card({image,descr,rating,price}){
+export default function Card({id,image,descr,rating,price}){
      const [{basket},dispatch]=useStateValue();
 
     
