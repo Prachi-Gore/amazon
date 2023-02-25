@@ -29,7 +29,6 @@ flex-direction:column ;
 align-items: center;
 `;
 const Logo=styled.div`
-
 width:170px;
 padding:20px;
 img{
@@ -37,7 +36,6 @@ img{
 }
 `;
 const Form=styled.form`
-
 display:flex ;
 flex-direction: column;
 width:30%;
