@@ -6,6 +6,7 @@ import Login from './Components/Login';
 import SignUp from './Components/SignUp';
 import Home from './Components/Home';
 import Checkout from './Components/Checkout';
+import Address from "./Components/Address";
 
 
 
@@ -19,6 +20,7 @@ function App() {
         <Route path='/login' element={<Login/>}></Route>
         <Route path='/signup' element={<SignUp/>}></Route>
         <Route path='/checkout' element={<Checkout/>}></Route>
+        <Route path='/address' element={<Address/>}></Route>
 
       </Routes>
      </Container>
@@ -27,6 +29,7 @@ function App() {
 }
 const Container=styled.div`
 width:100vw;
+height:100vh;
 
 `;
 
