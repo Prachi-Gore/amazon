@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Navbar from './Navbar'
 import CurrencyFormat from "react-currency-format";
 import { getBasketTotal } from "../reducer";
+import { useNavigate } from "react-router-dom";
 
 export default function Checkout(){
 const [{basket},dispatch]=useStateValue();
@@ -14,6 +15,7 @@ dispatch ({
     id:id
 })
 }
+const navigate=useNavigate();
 
 
     return(
@@ -67,7 +69,7 @@ dispatch ({
              prefix="₹ "
              />
              
-          <button >Proceed to Checkout</button>
+          <button onClick={()=>navigate('/address')} >Proceed to Checkout</button>
         </Subtotal>
         
         </Main>
@@ -176,6 +178,8 @@ button{
     width: 80%;
     height: 33px;
     margin-top:20px;
+    cursor: pointer;
+    
     
 }
 p{
