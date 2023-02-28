@@ -19,22 +19,29 @@ import Card from "./Card";
            id={1}
             image="https://m.media-amazon.com/images/I/41h8nAsiOQL._SX300_SY300_QL70_FMwebp_.jpg" alt="loading.."
             descr="HP 15s,11th Gen Intel Core i3-1115G4 8GB RAM/512GB SSD"
-            rating={3.5}
+            rating={3}
             price={35000}>
             </Card>
             <Card 
-            id={2}
-            image="https://m.media-amazon.com/images/I/41h8nAsiOQL._SX300_SY300_QL70_FMwebp_.jpg" alt="loading.."
-            descr="HP 15s,11th Gen Intel Core i3-1115G4 8GB RAM/512GB SSD"
-            rating={2.5}
-            price={47000}>    
+           id={2}
+            image="https://5.imimg.com/data5/SB/WI/DP/SELLER-99655515/an-introduction-to-statistical-learning-with-applications-in-r-book.jpg" alt="loading.."
+            descr="An Introduction to Statistical Learning: with Applications in R"
+            rating={4.5}
+            price={550}>
             </Card>
             <Card 
-           id={3}
-            image="https://m.media-amazon.com/images/I/41h8nAsiOQL._SX300_SY300_QL70_FMwebp_.jpg" alt="loading.."
-            descr="HP 15s,11th Gen Intel Core i3-1115G4 8GB RAM/512GB SSD"
-            rating={2.5}
-            price={30000}>
+            id={3}
+            image="https://m.media-amazon.com/images/I/71cRfNp-KHL._SL1500_.jpg" alt="loading.."
+            descr="Convection Oven Toaster Griller with Motorized Rotisserie, 2000 Watt, 6 Heating Modes | Black"
+            rating={3.5}
+            price={3461}>    
+            </Card>
+            <Card 
+           id={4}
+            image="https://5.imimg.com/data5/WT/VL/YO/SELLER-99655515/the-elements-of-statistical-learning-data-mining-inference-and-prediction-book-500x500.jpg" alt="loading.."
+            descr="The Elements of Statistical Learning"
+            rating={4}
+            price={1000}>
             </Card>
             
             

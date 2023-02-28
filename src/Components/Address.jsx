@@ -1,8 +1,21 @@
 
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
+import { useStateValue } from '../StateProvider';
 import Navbar from './Navbar';
 export default function Address(){
+    const navigate=useNavigate();
+    const [{},dispatch]=useStateValue();
+    const deliver=(e)=>{
+        e.preventDefault();
+        
+    dispatch({
+        type:'SET_ADDRESS',
+        item:{name,phone,email,flat,area,landmark,city,state}
+    })
+    navigate('/payment')
+}
     const [name,setName]=useState("");
     const [phone,setPhone]=useState("");
     const [email,setEmail]=useState("");
@@ -11,8 +24,9 @@ export default function Address(){
     const [landmark,setLandmark]=useState("");
     const [city,setCity]=useState("");
     const [state,setState]=useState("");
+    
 
-
+//console.log(name);
     return(
    
         <Container>
@@ -20,7 +34,7 @@ export default function Address(){
         <InnerContainer>
         <Form>
         <label for="name">Full Name</label>
-        <input type="text"id="name" placeholder="Prachi G Gore"onChange={(e)=>{setName(e.target.value)}}value={name}/>
+        <input  type="text"id="name" placeholder="Prachi G Gore"onChange={(e)=>{setName(e.target.value)}}value={name}/>
         <label for="phone">Phone Number</label>
         <input type="tel"id="phone" placeholder='0123456789'onChange={(e)=>{setPhone(e.target.value) }}value={phone}/>
         <label for="email">Email</label>
@@ -35,7 +49,7 @@ export default function Address(){
         <input id="town" placeholder='Mumbai'onChange={(e)=>{setCity(e.target.value)} }value={city}/>
         <label for="state">State</label>
         <input id="state" placeholder='Maharashtra'onChange={(e)=>setState(e.target.value) }value={state}/>
-        <button>Deliver to this Address</button>
+        <button onClick={deliver}>Deliver to this Address</button>
         </Form>
         </InnerContainer>
         </Container>

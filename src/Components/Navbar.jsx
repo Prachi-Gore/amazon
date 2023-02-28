@@ -19,7 +19,7 @@ import { useStateValue } from "../StateProvider";
             </Logo>
             <SearchBar>
                 <input type="text"placeholder="Search..." />
-                <img src={searchIcon} alt="loading"></img>
+                <img src={searchIcon} alt="loading" onClick={()=>navigate('/addproduct')}></img>
             </SearchBar>
             
             <RightContainer>
@@ -39,7 +39,7 @@ import { useStateValue } from "../StateProvider";
             </Inner>
             <MobileSearchBar>
             <input type="text"placeholder="Search..." />
-                <img src={searchIcon} alt="loading"></img>
+                <img src={searchIcon} alt="loading" onClick={()=>navigate('/addproduct')}></img>
 
             </MobileSearchBar> 
         </Container>

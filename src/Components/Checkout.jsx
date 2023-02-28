@@ -81,12 +81,13 @@ const navigate=useNavigate();
 
 const Container=styled.div`
 width:100%;
-height:fit-content;
+height: 100%;
 background-color:rgb(234,237,237);   
 `
 const Main=styled.div`
 display: flex;
 padding: 15px;
+background-color:rgb(234,237,237);   
 @media only screen and (max-width:1200px){
     flex-direction: column;
 }
@@ -112,6 +113,7 @@ height:fit-content;
 `;
 const Image=styled.div`
 flex: 30%;
+padding-right:25px;
 img{
 width:100%;
 }
