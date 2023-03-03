@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components'
 import Navbar from './Navbar';
 import CurrencyFormat from "react-currency-format";
@@ -12,6 +13,7 @@ export default function Payment(){
     const navigate=useNavigate();
     const elements=useElements();
      const stripe=useStripe();
+     console.log(address.phone)
     return (
       <Container>
         <Navbar></Navbar>
@@ -26,10 +28,8 @@ export default function Payment(){
                 <p>{address.flat}</p>
                 <p>{address.area}</p>
                 <p>{address.landmark}</p>
-                <p>
-                  {address.city},{address.state}
-                </p>
-                <p>Phone: {address.phone}</p>
+                {address.city&&address.state?<p>{address.city},{address.state}</p>:<p>{address.city}{address.state}</p>}
+                {address.phone?<p>Phone: {address.phone}</p>:<p></p>}
               </div>
 
             </AddressContainer>
