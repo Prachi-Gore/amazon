@@ -1,22 +1,60 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
+import { Alert } from '@mui/material';
+
 const Login = () => {
   const logoPath="/amazon_logo.png";
+  const navigate=useNavigate();
+  const [error,setError]=useState({
+    status:false,
+    msg:'',
+    type:''
+  });
+
+  const handleSubmit=(e)=>{
+e.preventDefault()// stop loading while submitting
+  const loginData=new FormData(e.currentTarget);
+  const actualData={
+    email:loginData.get('mail'),
+    password:loginData.get('password')
+  }
+  
+if(actualData.email&&actualData.password){
+ 
+  setError({
+    status:true,
+    msg:"Successfully Login",
+    type:"success"
+  })
+  //document.getElementById('login-form').reset();
+}else{
+  setError({
+    status:true,
+    msg:"All Fields are Required",
+    type:"error"
+  })
+}
+
+}
   return (
     <Container>
      <Logo >
       <img src={logoPath} alt='logo is loading...'></img>
     </Logo>
-    <Form>
+    <Form onSubmit={handleSubmit} id='login-form'>
         <h3>Sign-In</h3>
         <label for="mail">Email</label>
-        <input type="email"placeholder='example@.com' id="mail"/>
+        <input type="email"placeholder='example@.com' id="mail" name='mail'/>
         <label for="password">Password</label>
-        <input type="password"placeholder='********'/>
-        <LoginButton>Login</LoginButton>
+        <input type="password"placeholder='********'name='password'/>
+        <LoginButton onClick={(e)=>{
+          if(error.status==='success')
+          navigate('/home')}}>Login</LoginButton>
         <InfoText>By continuing, you agree to Amazon's <span>Condtions of Use </span>and <span>Privacy Notice </span>.</InfoText>
+        {error.status?<Alert severity={error.type}>{error.msg}</Alert>:''}
       </Form>
-     < SignupButton>Create Account in Amazon</SignupButton>
+     < SignupButton onClick={(e)=>navigate('/signup')}>Create Account in Amazon</SignupButton>
       </Container>
   )
 }
@@ -39,7 +77,7 @@ const Form=styled.form`
 display:flex ;
 flex-direction: column;
 width:30%;
-height:500px ;
+height:fit-content ;
 padding:20px ;
 border:solid 1.5px lightgrey ;
 h3{
@@ -99,6 +137,7 @@ margin-top: 20px;
 &:hover{
   background-color:#dfdfdf;
   border: 1px solid gray;
+  cursor: pointer;
 }
 `
 export default Login;
