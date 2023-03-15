@@ -37,6 +37,9 @@ if(actualData.email&&actualData.password){
 }
 
 }
+
+
+
   return (
     <Container>
      <Logo >
@@ -49,15 +52,19 @@ if(actualData.email&&actualData.password){
         <label for="password">Password</label>
         <input type="password"placeholder='********'name='password'/>
         <LoginButton onClick={(e)=>{
-          if(error.status==='success')
-          navigate('/home')}}>Login</LoginButton>
+            e.preventDefault()
+            if(error.type==='success'){
+            navigate('/home')
+          }}}>
+        Login
+        </LoginButton>
         <InfoText>By continuing, you agree to Amazon's <span>Condtions of Use </span>and <span>Privacy Notice </span>.</InfoText>
         {error.status?<Alert severity={error.type}>{error.msg}</Alert>:''}
       </Form>
      < SignupButton onClick={(e)=>navigate('/signup')}>Create Account in Amazon</SignupButton>
       </Container>
   )
-}
+  }
 const Container=styled.div`
 width:100vw;
 
