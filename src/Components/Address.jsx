@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import { useStateValue } from '../StateProvider';
 import Navbar from './Navbar';
+import { Alert } from '@mui/material';
+
 export default function Address(){
     const navigate=useNavigate();
     const [{},dispatch]=useStateValue();
@@ -32,11 +34,11 @@ export default function Address(){
         <Container>
         <Navbar/>
         <InnerContainer>
-        <Form>
+        <Form id='address-form'>
         <label for="name">Full Name</label>
         <input  type="text"id="name" placeholder="Prachi G Gore"onChange={(e)=>{setName(e.target.value)}}value={name}/>
         <label for="phone">Phone Number</label>
-        <input type="tel"id="phone" placeholder='0123456789'onChange={(e)=>{setPhone(e.target.value) }}value={phone}/>
+        <input type="tel"id="phone"  placeholder='0123456789'onChange={(e)=>{setPhone(e.target.value) }}value={phone}/>
         <label for="email">Email</label>
         <input type="email"id="email"placeholder='prachigore408@gmail.com'onChange={(e)=>{setEmail(e.target.value) }}value={email}/>
         <label for="flat">Flat, House no., Building, Company, Apartment</label>
@@ -49,6 +51,7 @@ export default function Address(){
         <input id="town" placeholder='Mumbai'onChange={(e)=>{setCity(e.target.value)} }value={city}/>
         <label for="state">State</label>
         <input id="state" placeholder='Maharashtra'onChange={(e)=>setState(e.target.value) }value={state}/>
+        
         <button onClick={deliver}>Deliver to this Address</button>
         </Form>
         </InnerContainer>
