@@ -12,7 +12,7 @@ const Login = () => {
     type:''
   });
 
-  const handleSubmit=(e)=>{
+const handleSubmit=(e)=>{
 e.preventDefault()// stop loading while submitting
   const loginData=new FormData(e.currentTarget);
   const actualData={
@@ -28,6 +28,8 @@ if(actualData.email&&actualData.password){
     type:"success"
   })
   //document.getElementById('login-form').reset();
+  setTimeout(()=>navigate('/home'),1000)
+  
 }else{
   setError({
     status:true,
@@ -35,6 +37,7 @@ if(actualData.email&&actualData.password){
     type:"error"
   })
 }
+//console.log(actualData)
 
 }
 
@@ -50,12 +53,9 @@ if(actualData.email&&actualData.password){
         <label for="mail">Email</label>
         <input type="email"placeholder='example@.com' id="mail" name='mail'/>
         <label for="password">Password</label>
-        <input type="password"placeholder='********'name='password'/>
-        <LoginButton onClick={(e)=>{
-            e.preventDefault()
-            if(error.type==='success'){
-            navigate('/home')
-          }}}>
+        <input type="password"placeholder='********'name='password'id='password'/>
+        <a href="/sendmail">Forgot Password</a>
+        <LoginButton >
         Login
         </LoginButton>
         <InfoText>By continuing, you agree to Amazon's <span>Condtions of Use </span>and <span>Privacy Notice </span>.</InfoText>
@@ -113,6 +113,10 @@ border-radius:5px ;
   
 }
 }
+a{
+  text-align:right;
+  margin-right:40px;
+}
 
 `;
 const LoginButton=styled.button`
@@ -123,7 +127,7 @@ font-size: 17px;
 background-color:#f3b414;
 padding: 7px;
 margin-left: 25%;
-margin-top: 10px;
+margin-top: 20px;
 justify-content: center;
 `;
 const InfoText=styled.p`
