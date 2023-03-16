@@ -8,6 +8,8 @@ import Home from './Components/Home';
 import Checkout from './Components/Checkout';
 import Address from "./Components/Address";
 import Payment from './Components/Payment';
+import SendMail from './Components/SendMail';
+import ResetPassword from './Components/ResetPassword';
 import {Elements} from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
 
@@ -27,6 +29,8 @@ function App() {
         <Route path='/home' element={<Home/>}></Route>
         <Route path='/checkout' element={<Checkout/>}></Route>
         <Route path='/address' element={<Address/>}></Route>
+        <Route path='/sendmail' element={<SendMail/>}></Route>
+        <Route path='/resetpassword' element={<ResetPassword/>}></Route>
         <Route path='/payment' element={<Elements stripe={promise}><Payment/></Elements>}></Route>
        
       </Routes>
