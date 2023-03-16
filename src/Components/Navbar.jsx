@@ -19,10 +19,14 @@ import { useStateValue } from "../StateProvider";
             </Logo>
             <SearchBar>
                 <input type="text"placeholder="Search..." />
-                <img src={searchIcon} alt="loading" onClick={()=>navigate('/addproduct')}></img>
+                <img src={searchIcon} alt="loading" ></img>
             </SearchBar>
             
             <RightContainer>
+            <NavBtn>
+                    <p></p>
+                    <p onClick={()=>navigate('/login')}>Login</p>
+                </NavBtn>
                 <NavBtn>
                     <p>Hello,</p>
                     <p>Guest</p>
@@ -39,7 +43,7 @@ import { useStateValue } from "../StateProvider";
             </Inner>
             <MobileSearchBar>
             <input type="text"placeholder="Search..." />
-                <img src={searchIcon} alt="loading" onClick={()=>navigate('/addproduct')}></img>
+                <img src={searchIcon} alt="loading" ></img>
 
             </MobileSearchBar> 
         </Container>
@@ -114,7 +118,7 @@ cursor: pointer;
 `;
 
 const SearchBar=styled.div`
-min-width:800px;
+min-width:900px;
 
 
 input{
