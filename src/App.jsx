@@ -29,7 +29,7 @@ function App() {
         <Route path='/home' element={<Home/>}></Route>
         <Route path='/checkout' element={<Checkout/>}></Route>
         <Route path='/address' element={<Address/>}></Route>
-        <Route path='/sendmail' element={<Login/>}></Route>
+        <Route path='/sendmail' element={<SendMail/>}></Route>
         <Route path='/resetpassword' element={<ResetPassword/>}></Route>
         <Route path='/payment' element={<Elements stripe={promise}><Payment/></Elements>}></Route>
        
