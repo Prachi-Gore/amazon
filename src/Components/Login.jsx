@@ -54,7 +54,7 @@ if(actualData.email&&actualData.password){
         <input type="email"placeholder='example@.com' id="mail" name='mail'/>
         <label for="password">Password</label>
         <input type="password"placeholder='********'name='password'id='password'/>
-        <a href="/sendmail">Forgot Password</a>
+        <a onClick={(e)=>navigate('/sendmail')}>Forgot Password</a>
         <LoginButton >
         Login
         </LoginButton>
@@ -116,6 +116,9 @@ border-radius:5px ;
 a{
   text-align:right;
   margin-right:40px;
+  color:blue;
+  text-decoration:underline;
+  cursor: pointer;
 }
 
 `;
