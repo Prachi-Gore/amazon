@@ -42,9 +42,9 @@ const navigate=useNavigate()
     </Logo>
       <Form onSubmit={handleSubmit}>
         <label for="EP">Enter Password</label>
-        <input id="EP" name='ep' type="text"/>
+        <input id="EP" name='ep' type="password"/>
         <label for="CP" >Confirm Password</label>
-        <input id="CP"name="cp" type="text"/>
+        <input id="CP"name="cp" type="password"/>
         <button>Submit</button>
       </Form>
       {error.status?
