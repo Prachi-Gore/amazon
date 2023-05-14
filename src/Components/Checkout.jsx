@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 
 export default function Checkout(){
 const [{basket},dispatch]=useStateValue();
+console.log(basket)
 const removeFromBasket=(e,id)=>{
     e.preventDefault();
 dispatch ({
@@ -35,7 +36,9 @@ const navigate=useNavigate();
                 {product.descr}
                 </h4>
                 <p>₹ {product.price}</p>
-                <button onClick={(e)=>removeFromBasket(e,product.id)}>Remove</button>
+                <button onClick={(e)=>{
+                    console.log(product)
+                    removeFromBasket(e,product.id)}}>Remove</button>
                </Description>
                
             </Product>
