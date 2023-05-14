@@ -16,7 +16,7 @@ import Card from "./Card";
         <Main>
             
             <Card 
-           id={1}
+            id={1}
             image="https://m.media-amazon.com/images/I/41h8nAsiOQL._SX300_SY300_QL70_FMwebp_.jpg" alt="loading.."
             descr="HP 15s,11th Gen Intel Core i3-1115G4 8GB RAM/512GB SSD"
             rating={3}
