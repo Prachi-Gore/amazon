@@ -14,7 +14,7 @@ export default function Card({id,image,descr,rating,price}){
             {
                 type:'ADD_TO_BASKET',
                 item:{
-                    image,descr,rating,price
+                    id,image,descr,rating,price
                 }
             }  
         );
