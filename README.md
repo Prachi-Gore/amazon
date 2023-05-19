@@ -1,6 +1,6 @@
 ## About The Project
 
-![product-screenshot](/src/assets/favicon.ico)
+![product-screenshot](/src/assets/amazon_logo.png)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -21,11 +21,11 @@
 ## Features
 
 - User Authentication
-  - Login.
-  - Signup.
+  - Login
+  - Signup
 - Cart Management
-  - Add/Remove item to Cart.
-  - Increase/Decrease quantity of item in Cart.
+  - Add/Remove item to Cart
+  - Increase/Decrease quantity of item in Cart
 - Form Validation
 - Reset Password
 - Address Page
@@ -42,18 +42,18 @@
 - /src
    - /assets
    - /components
-      - /Address
-      - /Card
-      - /Checkout
-      - /Login
-      - /Home
-      - /Navbar
-      - /Checkout
-      - /ResetPassword
-      - /SendMail
-      - /SignUp      
-  - /reducer
-  - /StateProvider
+      - Address
+      - Card
+      - Checkout
+      - Login
+      - Home
+      - Navbar
+      - Checkout
+      - ResetPassword
+      - SendMail
+      - SignUp      
+  - reducer
+  - StateProvider
   - App.css
   - App.jsx
   - index.css
@@ -71,8 +71,7 @@
 
 ## Contact
 
-- Linkedin - [@ankurchunekar](https://www.linkedin.com/in/prachi-gore-4772a11a5)
-- Website - [ankurchunekar.netlify.app](https://prachi-gore-portfolio.netlify.app/)
-- Hashnode - [@ankurchunekar](https://dev.to/prachigore)
+ - [Linkedin](https://www.linkedin.com/in/prachi-gore-4772a11a5)
+ - [Website](https://prachi-gore-portfolio.netlify.app/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
