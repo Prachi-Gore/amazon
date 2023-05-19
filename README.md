@@ -1,7 +1,7 @@
 ## About The Project
 
 <!-- ![product-screenshot](amazon_logo.png) -->
-<img src="https://prachi-gore-portfolio.netlify.app/public/amazon_logo.png" alt="Logo" width="150" height="150">
+<img src="https://prachi-gore-portfolio.netlify.app/images/amazon_logo.png" alt="Logo" width="150" height="150">
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- Built With -->
