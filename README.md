@@ -23,6 +23,7 @@
 - Cart Management
   - Add/Remove item to Cart
   - Increase/Decrease quantity of item in Cart
+  - Updating Subtotal
 - Form Validation
 - Reset Password
 - Address Page
