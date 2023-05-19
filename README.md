@@ -1,7 +1,6 @@
 ## About The Project
 
-![product-screenshot](/src/assets/amazon_logo.png)
-
+![product-screenshot](/amazon_logo.png)
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- Built With -->
@@ -13,11 +12,9 @@
 - [Vite.js](https://vitejs.dev/)
 - [Context API](https://www.mockbe.netlify.app/)
 - [HTML5](https://fkhadra.github.io/react-toastify/)
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- Features -->
-
 ## Features
 
 - User Authentication
@@ -31,7 +28,6 @@
 - Address Page
 - Payment Page
 - Checkout Page
-
  <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- Folder Structure -->
@@ -64,7 +60,6 @@
 - index.html
 - vite.config.js
 ```
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTACT -->
@@ -73,5 +68,4 @@
 
  - [Linkedin](https://www.linkedin.com/in/prachi-gore-4772a11a5)
  - [Website](https://prachi-gore-portfolio.netlify.app/)
-
 <p align="right">(<a href="#top">back to top</a>)</p>
