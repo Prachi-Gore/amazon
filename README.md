@@ -1,6 +1,6 @@
 ## About The Project
 
-![product-screenshot](/public/amazon_logo.png)
+! [product-screenshot](amazon_logo.png)
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- Built With -->
