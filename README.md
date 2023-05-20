@@ -12,7 +12,7 @@
 - [Styled Components](https://styled-components.com/)
 - [Vite.js](https://vitejs.dev/)
 - [Context API](https://www.mockbe.netlify.app/)
-- [HTML5](https://fkhadra.github.io/react-toastify/)
+- [HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML)
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- Features -->
