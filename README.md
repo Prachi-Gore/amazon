@@ -3,7 +3,7 @@
 <!-- ![product-screenshot](amazon_logo.png)  -->
 <p align="center">
   <a href="https://amazon-frontend-responsive.netlify.app/">
-<img src="amazon_logo.png" alt="">
+<img src="amazon_logo.png" alt=""/>
   </a>
 </p>  
 
