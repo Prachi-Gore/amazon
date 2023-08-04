@@ -1,11 +1,12 @@
 
 
 <!-- ![product-screenshot](amazon_logo.png)  -->
-<p align="center">
+<p>
   <a href="https://amazon-frontend-responsive.netlify.app/">
 <img src="amazon_logo.png" alt=""/>
   </a>
 </p>  
+
 
 
 <!-- Built With -->
