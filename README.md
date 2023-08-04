@@ -2,8 +2,9 @@
 
 <!-- ![product-screenshot](amazon_logo.png)  -->
 <p align="center">
+  <br>
   <a href="https://amazon-frontend-responsive.netlify.app/" target="_blank">
-<img src="/src/assets/amazon_logo.png" alt=""/>
+<img src="/src/assets/amazon_logo.png" alt="" width="100px"/>
   </a>
 </p>  
 
